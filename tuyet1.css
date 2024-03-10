@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap');
+body {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/IMG/327224566_563343982345097_7116633447691500246_n.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: aquamarine;
+    margin: 0;
+    font-size: xxx-large;
+    font-family: 'Snowburst One', system-ui;
+}
+
+.snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(/IMG/hoatuyet1-removebg-preview.png);
+    background-size: cover;
+    animation: animationSnow 4s ease-in-out infinite;
+}
+
+@keyframes animationSnow {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(100px, 50vh);
+    }
+}
